@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" id="Home">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nvaa" />
+    <meta name="keywords" content="Portfolio, Website, Design" />
+    <meta name="description" content="Nvaa - Portfolio-website" />
+    <!-- title -->
+    <title>Nvaa - Mainpage</title>
+    <link rel="icon" href="assest/feather/box.svg" />
+    <!-- title-ends -->
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- style-end -->
+
+    <!-- fonts-google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts-end -->
+  </head>
+  <body id="Home">
+    <!-- navbar-section -->
+    <nav class="navbar">
+      <nav class="nav-container">
+        <section class="nav-section">
+          <nav class="nav-content">
+            <div class="nav-brand">
+              <!-- nav-brand -->
+              <a
+                href="#Home"
+                class="active-link-brand"
+                style="text-decoration: none"
+              >
+                Nvaa
+              </a>
+            </div>
+            <div class="nav-active">
+              <nav class="nav-list">
+                <center>
+                  <nav class="nav-menu">
+                    <!-- nav-menu -->
+                    <img src="assest/feather/menu.svg" alt="menu-svg" />
+                  </nav>
+                  <nav class="active-content">
+                    <ul class="ul-nav">
+                      <li style="margin-top: -1.9rem" class="li-nav">
+                        <a
+                          href="#Home"
+                          class="active-link"
+                          style="margin-right: -0.8rem"
+                        >
+                          <!-- home-img-navbar -->
+                          <img src="assest/feather/home.svg" alt="home" />
+                        </a>
+                      </li>
+                      <li style="margin-top: -2rem" class="li-nav">
+                        <a
+                          href="#Home"
+                          class="active-link"
+                          style="text-decoration: none"
+                        >
+                          <!-- nav-home -->
+                          <div class="homeDiv">Home</div>
+                        </a>
+                      </li>
+                      <li style="margin-top: -2rem" class="li-nav">
+                        <a
+                          href="#aboutMe"
+                          class="active-link"
+                          style="text-decoration: none"
+                        >
+                          <!-- nav-about -->
+                          About
+                        </a>
+                      </li>
+                      <li style="margin-top: -2rem" class="li-nav">
+                        <a
+                          href="./components/contact/index.html"
+                          class="active-link"
+                          style="text-decoration: none"
+                        >
+                          <!-- nav-contact -->
+                          Contact
+                        </a>
+                      </li>
+                      <div class="dropdown">
+                        <div class="dropdown-select" style="margin-top: -2rem">
+                          <!-- nav-dropdown -->
+                          <a
+                            onclick="othersToggle('othersParams')"
+                            class="active-link others"
+                            id="others"
+                            style="color: white"
+                          >
+                            Others
+                          </a>
+                          <img
+                            class="img-dropdown"
+                            src="assest/icons/chevron-down-regular-24.png"
+                            alt="svg"
+                            id="downLogo"
+                            onclick="downLogo('logoParams')"
+                          />
+                        </div>
+
+                        <div class="dropdown-menu" id="subMenu">
+                          <ul class="options" id="subMenuList">
+                            <li class="option-sosmed option">
+                              <a
+                                href="#"
+                                class="active-link"
+                                style="text-decoration: none"
+                              >
+                                Social Media
+                              </a>
+                            </li>
+                            <li class="option-projects option">
+                              <a
+                                href="#"
+                                class="active-link"
+                                style="text-decoration: none"
+                              >
+                                Projects
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <li style="margin-top: -2.3rem" class="li-nav">
+                        <a
+                          href="#"
+                          class="active-link"
+                          style="margin-right: -34rem"
+                        >
+                          <!-- nav-darkMode -->
+                          <img
+                            src="assest/feather/moon.svg"
+                            alt="svg"
+                            style="width: 1.9rem"
+                            id="darkMode"
+                            onclick="darkModeSwitch()"
+                          />
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </center>
+              </nav>
+            </div>
+          </nav>
+        </section>
+      </nav>
+    </nav>
+    <!-- hero-section -->
+    <div class="hero">
+      <section class="heroSection">
+        <div class="heroContainer">
+          <div class="heroContent">
+            <div class="heroHead"><p class="wrapperHead">Welcome,</p></div>
+            <div class="heroText">
+              <p class="heroContentText">
+                <span id="nva">I am Nova, a web developer from indonesia.</span>
+                Crafting digital experiences that bring your life to the future.
+                Designing and developing beautiful, functional websites that
+                tell your story.
+              </p>
+            </div>
+            <div class="socialMedia">
+              <div class="socialContent">
+                <a
+                  href="https://www.instagram.com/thenavyowll/?igshid=ZDdkNTZiNTM"
+                  class="active-link"
+                >
+                  <img
+                    src="assest/icons/InstagramSocial.svg"
+                    alt="ins"
+                    class="ins"
+                  />
+                </a>
+                <a href="https://github.com/ItsNvaa" class="active-link">
+                  <img
+                    src="assest/icons/icons8-github.svg"
+                    alt="git"
+                    class="git"
+                    style="margin-left: 0.3rem"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="ctaBtn">
+              <a href="#" class="active-link">
+                <button class="heroBtn" type="submit">Learn more</button>
+              </a>
+            </div>
+            <center>
+              <div class="imagesProfile">
+                <div class="heroProfileBg">
+                  <img src="assest/background-images/blob23.svg" alt="images" />
+                </div>
+                <div class="heroProfile">
+                  <img
+                    src="assest/background-images/heroProfile.png"
+                    alt="images"
+                    class="heroImagesProfile"
+                  />
+                </div>
+              </div>
+            </center>
+
+            <div class="cubeIcon">
+              <div class="cubeBackground">
+                <img src="assest/icons/cube.svg" alt="cube" class="cubeOne" />
+                <img src="assest/icons/cube.svg" alt="cube" class="cubeTwo" />
+                <img src="assest/icons/cube.svg" alt="cube" class="cubeThree" />
+                <!-- <img src="assest/icons/cube.svg" alt="cube" class="cubeFour" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- hero-section-ends -->
+
+    <!-- credit -->
+    <div class="creditWebsite">
+      <div class="creditContent">
+        <div class="creditText">
+          <p class="creditParagraph" style="color: white">
+            < Created with <span style="color: aqua">&#10084;</span> by Nova />
+          </p>
+        </div>
+        <div class="supportBrand">
+          <div class="supportContent">
+            <a
+              href="https://github.com/ItsNvaa"
+              class="active-link-git"
+              style="text-decoration: none"
+            >
+              <img
+                src="assest/icons/icons8-github.svg"
+                alt="git"
+                class="githubPage"
+              />
+            </a>
+            <a
+              href="https://github.com/ItsNvaa"
+              class="active-link-git"
+              style="text-decoration: none"
+            >
+              <p class="githubText" style="color: white">Github</p>
+            </a>
+
+            <a
+              href="https://www.instagram.com/thenavyowll/?igshid=ZDdkNTZiNTM"
+              class="active-link-ins"
+              style="text-decoration: none; color: white"
+            >
+              <img
+                src="assest/icons/InstagramSocial.svg"
+                alt="ins"
+                class="insPage"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/thenavyowll/?igshid=ZDdkNTZiNTM"
+              class="active-link-ins"
+              style="text-decoration: none"
+            >
+              <p class="insText" style="color: white">Instagram</p>
+            </a>
+          </div>
+        </div>
+        <div class="cubeIcon">
+          <div class="cubeBackground">
+            <img src="assest/icons/cube.svg" alt="cube" class="cubeFour" />
+            <img src="assest/icons/cube.svg" alt="cube" class="cubeFive" />
+          </div>
+        </div>
+        <div class="waveSvg" id="aboutMe">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#2c2c2c"
+              fill-opacity="1"
+              d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,101.3C1120,107,1280,85,1360,74.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- credit-end -->
+
+    <!-- aboutMeSection -->
+    <div class="aboutMe">
+      <div class="aboutContainer">
+        <div class="aboutContent">
+          <div class="aboutHeader">
+            <p class="aboutHeaderText">
+              < Discovering the person behind the story />
+            </p>
+          </div>
+          <div class="aboutText">
+            <p class="aboutMeText">
+              <span class="Dev">Hai!! I'm Nova, a junior web developer.</span> a
+              fourteen years old boy who <span class="dreams">dreams</span> can
+              make a technology that solve the worst feeling he can felt.
+            </p>
+          </div>
+          <div class="friendsSection">
+            <div class="friendsContent">
+              <div class="friendsHeader">
+                <p class="friendsText">Let's be friends</p>
+              </div>
+              <div class="friendsContentText">
+                <p class="friendsTagline">
+                  Lets begin this <span class="chapter">new chapter</span>,
+                  together, and lets start the work right now.👏🏻
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="aboutSocialMedia">
+            <div class="socialMediaContent">
+              <a href="https://github.com/ItsNvaa" class="active-link">
+                <img src="assest/icons/icons8-github.svg" alt="git" />
+              </a>
+              <a
+                href="https://www.instagram.com/thenavyowll/?igshid=ZDdkNTZiNTM"
+                class="active-link"
+              >
+                <img src="assest/icons/InstagramSocial.svg" alt="ins" />
+              </a>
+            </div>
+          </div>
+          <div class="aboutButton">
+            <div class="aboutCta">
+              <a
+                href="./components/about/index.html"
+                class="active-link ctaBtn"
+                style="width: 20%"
+              >
+                <button class="aboutBtn" type="submit">Learn More</button>
+              </a>
+            </div>
+          </div>
+          <div class="aboutImages">
+            <div class="aboutImagesProfile">
+              <img
+                src="assest/background-images/profileTransparent.png"
+                alt="profile"
+                class="aboutProfile"
+              />
+            </div>
+          </div>
+          <div class="cubeIcon">
+            <div class="cubeBackground">
+              <img
+                src="assest/featherAquaColors/package.svg"
+                alt="cube"
+                class="packageOne"
+              />
+              <img
+                src="assest/featherAquaColors/layers.svg"
+                alt="cube"
+                class="layersOne"
+              />
+              <img
+                src="assest/featherAquaColors/box.svg"
+                alt="cube"
+                class="cubeSix"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="greyWaveSvg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#1c1c1c"
+              fill-opacity="1"
+              d="M0,64L80,53.3C160,43,320,21,480,32C640,43,800,85,960,85.3C1120,85,1280,43,1360,21.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- SectionEnds -->
+
+    <!-- projectsSection -->
+    <div id="projects">
+      <section class="projectsSection" style="color: white">
+        <div class="projectsContainer">
+          <div class="projectsHeader">
+            <p class="projectsHeaderParagpraph">My current Projects</p>
+          </div>
+          <div class="projectsTagline">
+            <p class="projectsTaglineParagraph">
+              Showcasing creativity, one project at a time.
+            </p>
+          </div>
+          <div class="projectsLandingPage">
+            <p class="projectsLandingPageText">
+              Simple <span class="landingSpan">Landing Page</span>
+            </p>
+          </div>
+          <div class="landingPageTagline">
+            <p class="landingPageTaglineText">
+              A simple Landing Page that i created by using HTML and CSS
+              (Native)
+            </p>
+          </div>
+          <div class="projectsCtaBtn">
+            <div class="projectsButton">
+              <button class="projectsBtn" type="sumbit">View more</button>
+            </div>
+          </div>
+          <div class="projectsImages">
+            <div class="landingPageImages">
+              <img
+                src="assest/background-images/landingPageProjects.png"
+                alt="projects"
+                class="imagesLandingPage"
+                style="width: 20rem"
+              />
+            </div>
+          </div>
+          <div class="cubeSection">
+            <div class="cubeImages">
+              <img src="assest/icons/cube.svg" alt="cube" class="cubeSeven" />
+              <img src="assest/icons/cube.svg" alt="cube" class="cubeEight" />
+              <img src="assest/icons/cube.svg" alt="cube" class="cubeNine" />
+            </div>
+          </div>
+          <div class="anotherProjects">
+            <div class="anotherProjectsHeader">
+              <p class="anotherProjectsHead">Another Projects</p>
+            </div>
+            <div class="anotherProjectsTagline">
+              <p class="anotherProjectsTaglineText">
+                Just another websites that i've made for learning a HTML and CSS
+                basic fundamentals
+              </p>
+            </div>
+            <div class="anotherProjectsCta">
+              <div class="anotherProjectsBtn">
+                <button class="anotherBtn" type="sumbit">View More</button>
+              </div>
+            </div>
+            <div class="anotherProjectsImages">
+              <img
+                src="assest/background-images/projects.png"
+                alt="projects"
+                class="anotherImages"
+                style="width: 20rem"
+              />
+            </div>
+            <div class="cubeSection">
+              <div class="cubeImages">
+                <img src="assest/icons/cube.svg" alt="cube" class="cubeTen" />
+                <img
+                  src="assest/icons/cube.svg"
+                  alt="cube"
+                  class="cubeEleven"
+                />
+                <img
+                  src="assest/icons/cube.svg"
+                  alt="cube"
+                  class="cubeTwelve"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- sectionEnds -->
+
+    <!-- Javascript -->
+    <script src="./script/navbarScript/menuToggle.js"></script>
+    <script src="./script/navbarScript/lightMode.js"></script>
+  </body>
+</html>
