@@ -114,7 +114,7 @@
                           <ul class="options" id="subMenuList">
                             <li class="option-sosmed option">
                               <a
-                                href="#"
+                                href="#Social-Media"
                                 class="active-link"
                                 style="text-decoration: none"
                               >
@@ -123,7 +123,7 @@
                             </li>
                             <li class="option-projects option">
                               <a
-                                href="#"
+                                href="#projects"
                                 class="active-link"
                                 style="text-decoration: none"
                               >
@@ -134,11 +134,7 @@
                         </div>
                       </div>
                       <li style="margin-top: -2.3rem" class="li-nav">
-                        <a
-                          href="#"
-                          class="active-link"
-                          style="margin-right: -34rem"
-                        >
+                        <div style="margin-right: -34rem">
                           <!-- nav-darkMode -->
                           <img
                             src="assest/feather/moon.svg"
@@ -147,7 +143,7 @@
                             id="darkMode"
                             onclick="darkModeSwitch()"
                           />
-                        </a>
+                        </div>
                       </li>
                     </ul>
                   </nav>
@@ -233,7 +229,7 @@
       <div class="creditContent">
         <div class="creditText">
           <p class="creditParagraph" style="color: white">
-            < Created with <span style="color: aqua">&#10084;</span> by Nova />
+            < Created with 🤍 by Nova />
           </p>
         </div>
         <div class="supportBrand">
@@ -286,7 +282,7 @@
         <div class="waveSvg" id="aboutMe">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#2c2c2c"
+              fill="#242323"
               fill-opacity="1"
               d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,101.3C1120,107,1280,85,1360,74.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
@@ -378,10 +374,10 @@
             </div>
           </div>
         </div>
-        <div class="greyWaveSvg">
+        <div class="greyWaveSvg" id="projects">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
-              fill="#1c1c1c"
+              fill="#161616"
               fill-opacity="1"
               d="M0,64L80,53.3C160,43,320,21,480,32C640,43,800,85,960,85.3C1120,85,1280,43,1360,21.3L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
@@ -392,16 +388,33 @@
     <!-- SectionEnds -->
 
     <!-- projectsSection -->
-    <div id="projects">
+    <div id="projectsSection">
       <section class="projectsSection" style="color: white">
         <div class="projectsContainer">
           <div class="projectsHeader">
-            <p class="projectsHeaderParagpraph">My current Projects</p>
+            <p class="projectsHeaderParagpraph">
+              < My current <span class="projectsSpan">Projects</span> />
+            </p>
           </div>
           <div class="projectsTagline">
             <p class="projectsTaglineParagraph">
-              Showcasing creativity, one project at a time.
+              Showcasing <span class="TagLineSpan">creativity</span>, one
+              project at a time.
             </p>
+          </div>
+          <div class="cubeHeader">
+            <div class="headerCubeWrapper">
+              <img
+                src="assest/featherAquaColors/layers.svg"
+                alt="cube"
+                class="headerCubeOne"
+              />
+              <img
+                src="assest/featherAquaColors/package.svg"
+                alt="cube"
+                class="headerCubeTwo"
+              />
+            </div>
           </div>
           <div class="projectsLandingPage">
             <p class="projectsLandingPageText">
@@ -416,7 +429,9 @@
           </div>
           <div class="projectsCtaBtn">
             <div class="projectsButton">
-              <button class="projectsBtn" type="sumbit">View more</button>
+              <button class="projectsBtn" type="sumbit" onclick="projectsBtn()">
+                View more
+              </button>
             </div>
           </div>
           <div class="projectsImages">
@@ -425,42 +440,58 @@
                 src="assest/background-images/landingPageProjects.png"
                 alt="projects"
                 class="imagesLandingPage"
-                style="width: 20rem"
               />
             </div>
           </div>
-          <div class="cubeSection">
-            <div class="cubeImages">
-              <img src="assest/icons/cube.svg" alt="cube" class="cubeSeven" />
-              <img src="assest/icons/cube.svg" alt="cube" class="cubeEight" />
-              <img src="assest/icons/cube.svg" alt="cube" class="cubeNine" />
+          <div class="cubeSection" id="imagesCubeProjects">
+            <div class="cubeImages" id="imagesCubeProjects">
+              <img
+                src="assest/featherAquaColors/cubePurple.svg"
+                alt="cube"
+                class="cubeSeven"
+              />
+              <img
+                src="assest/featherAquaColors/cubePurple.svg"
+                alt="cube"
+                class="cubeEight"
+              />
+              <img
+                src="assest/featherAquaColors/cubePurple.svg"
+                alt="cube"
+                class="cubeNine"
+              />
             </div>
           </div>
           <div class="anotherProjects">
             <div class="anotherProjectsHeader">
-              <p class="anotherProjectsHead">Another Projects</p>
+              <p class="anotherProjectsHead">
+                Another <span class="projectsSpan">Projects</span>
+              </p>
             </div>
             <div class="anotherProjectsTagline">
               <p class="anotherProjectsTaglineText">
-                Just another websites that i've made for learning a HTML and CSS
-                basic fundamentals
+                Just <span class="projectsSpan">another Projects</span> that
+                i've made for learning a < HTML /> and CSS basic fundamentals
               </p>
             </div>
             <div class="anotherProjectsCta">
               <div class="anotherProjectsBtn">
-                <button class="anotherBtn" type="sumbit">View More</button>
+                <button class="anotherBtn" type="sumbit" onclick="anotherBtn()">
+                  View More
+                </button>
               </div>
             </div>
-            <div class="anotherProjectsImages">
-              <img
-                src="assest/background-images/projects.png"
-                alt="projects"
-                class="anotherImages"
-                style="width: 20rem"
-              />
-            </div>
+            <center>
+              <div class="anotherProjectsImages">
+                <img
+                  src="assest/background-images/projects.png"
+                  alt="projects"
+                  class="anotherImages"
+                />
+              </div>
+            </center>
             <div class="cubeSection">
-              <div class="cubeImages">
+              <div class="cubeImages" id="anotherCubeImages">
                 <img src="assest/icons/cube.svg" alt="cube" class="cubeTen" />
                 <img
                   src="assest/icons/cube.svg"
@@ -476,12 +507,57 @@
             </div>
           </div>
         </div>
+        <div class="waveImages">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#242323"
+              fill-opacity="1"
+              d="M0,96L80,112C160,128,320,160,480,160C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
       </section>
+    </div>
+    <!-- sectionEnds -->
+
+    <!-- socialMediaSection -->
+    <div class="social-Media" id="Social-Media">
+      <div class="socialMediaContainer">
+        <div class="socialMediaContent">
+          <div class="socialHeader">
+            <p class="socialHead" style="color: white">
+              Connecting <span class="codersSpan">< coders /></span> around the
+              <span class="worldSpan">world</span>
+            </p>
+          </div>
+          <div class="socialTagline">
+            <p class="socialMediaTagline" style="color: white">
+              Stay <span id="connect">connected</span>, stay
+              <span id="engaged">engaged</span> - let's
+              <span id="social">socialize</span> with
+              <span id="media">social media!</span>
+            </p>
+          </div>
+          <div class="socialMediaIcons">
+            <div class="codeIconsImages">
+              <img
+                src="assest/icons/Code_perspective_matte.png"
+                alt="codeImg"
+                class="codeImg"
+              />
+            </div>
+            <div class="chatIconsImage">
+              <img src="assest/icons/chat.png" alt="chatImg" class="chatImg" />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- sectionEnds -->
 
     <!-- Javascript -->
     <script src="./script/navbarScript/menuToggle.js"></script>
     <script src="./script/navbarScript/lightMode.js"></script>
+    <script src="./script/projectsScript/openInNewTab.js"></script>
   </body>
 </html>

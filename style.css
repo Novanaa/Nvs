@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(22, 22, 22);
   font-family: "poppins", sans-serif;
 }
 
@@ -121,7 +121,7 @@ body {
 
 .homeDiv {
   text-decoration: underline;
-  text-decoration-thickness: 1.48px;
+  text-decoration-thickness: 1.6px;
   text-underline-offset: 0.25rem;
 }
 /* list-hover */
@@ -518,7 +518,7 @@ a::selection {
 
 /* aboutMeSection */
 .aboutMe {
-  background-color: #2c2c2c;
+  background-color: #242323;
   height: 38rem;
   margin-top: -1.5rem;
 }
@@ -571,6 +571,10 @@ a::selection {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+.aboutBtn:hover {
+  color: rgb(3, 123, 123);
+  transition: 0.1s 0.1s;
+}
 .aboutButton .aboutCta .ctaBtn {
   width: 20%;
   left: 0;
@@ -594,7 +598,7 @@ a::selection {
 
 /* profileSection */
 .aboutImagesProfile {
-  margin-left: 40rem;
+  margin-left: 48rem;
   margin-top: -24rem;
 }
 .aboutProfile {
@@ -643,9 +647,378 @@ a::selection {
 /* SectionIconsEND */
 /* waveSection */
 .greyWaveSvg {
-  margin-top: 12.2rem;
+  margin-top: 13rem;
 }
 /* sectionEnds */
+
+/* projectsSection */
+/* recentProjects */
+.projectsHeader {
+  margin-top: 8rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.projectsSpan {
+  color: aqua;
+}
+
+/* headerCube */
+.headerCube {
+  position: relative;
+}
+.headerCubeWrapper {
+  position: relative;
+}
+
+.headerCubeOne {
+  width: 2.6rem;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 7s, floating 5.5s infinite;
+  margin-left: 11.5rem;
+  rotate: 13deg;
+  margin-top: -7rem;
+  position: absolute;
+}
+.headerCubeTwo {
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5s, floating 6s infinite;
+  width: 2.6rem;
+  position: absolute;
+  rotate: 13deg;
+  margin-left: 44rem;
+  margin-top: -2.5rem;
+}
+
+.projectsTaglineParagraph {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+.TagLineSpan {
+  color: aqua;
+}
+
+.projectsLandingPageText {
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 40rem;
+}
+.landingSpan {
+  color: #83468c;
+}
+
+.landingPageTaglineText {
+  margin-left: 51.8rem;
+  margin-top: 0.5rem;
+  font-weight: 400;
+  opacity: 0.9;
+  z-index: -1;
+  position: relative;
+  font-size: 1rem;
+}
+.landingPageTagline {
+  position: relative;
+  width: 85%;
+}
+
+.projectsBtn {
+  margin-top: 2rem;
+  border: none;
+  background-color: white;
+  color: #83468c;
+  font-weight: 600;
+  cursor: pointer;
+  font-style: italic;
+  border-radius: 5px;
+  width: 7.5rem;
+  height: 2.8rem;
+  box-shadow: 7px 7px #83468c;
+  font-size: 0.95rem;
+  margin-left: 27rem;
+}
+.projectsBtn:hover {
+  color: #782b84;
+  transition: 0.1s 0.1s;
+}
+.projectsButton {
+  text-align: center;
+}
+
+/* imagesSection */
+.imagesLandingPage {
+  margin-top: -12rem;
+  border-radius: 10px;
+  margin-left: 6rem;
+  width: 35rem;
+  rotate: -1.5deg;
+  z-index: -1;
+  position: relative;
+  box-shadow: -10px 10px #83468c;
+}
+
+/* cubeSection */
+/* cubeWrapper */
+#imagesCubeProjects {
+  position: absolute;
+}
+
+.cubeSeven {
+  position: absolute;
+  width: 2.6rem;
+  rotate: 12deg;
+  margin-top: -19rem;
+  margin-left: 1.8rem;
+  z-index: -1;
+}
+.cubeEight {
+  width: 2.6rem;
+  z-index: -1;
+  rotate: -30deg;
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 0.8rem;
+}
+.cubeNine {
+  position: absolute;
+  width: 2.6rem;
+  z-index: -1;
+  rotate: -8deg;
+  margin-left: 43rem;
+  margin-top: -10rem;
+}
+
+/* anotherProjectsSection */
+.anotherProjectsHead {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 10rem;
+  margin-left: 8rem;
+}
+.projectsSpan {
+  color: aqua;
+}
+
+.anotherProjectsTaglineText {
+  font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.9;
+  margin-left: 8rem;
+  margin-top: 0.5rem;
+  z-index: -1;
+  position: relative;
+}
+.anotherProjectsTagline {
+  width: 35%;
+}
+
+.anotherBtn {
+  border: none;
+  background-color: white;
+  color: rgb(4, 176, 176);
+  font-weight: 600;
+  cursor: pointer;
+  font-style: italic;
+  border-radius: 5px;
+  width: 7.5rem;
+  height: 2.8rem;
+  box-shadow: 7px 7px aquamarine;
+  font-size: 0.95rem;
+  margin-top: 2.2rem;
+  margin-left: 8.1rem;
+}
+.anotherBtn:hover {
+  color: rgb(3, 123, 123);
+  transition: 0.1s 0.1s;
+}
+
+/* imagesSection */
+.anotherImages {
+  width: 35rem;
+  border-radius: 10px;
+  z-index: -1;
+  position: relative;
+  rotate: 1deg;
+  margin-left: 35rem;
+  margin-top: -14rem;
+  box-shadow: 10px 10px aqua;
+}
+
+/* secCubeSection */
+#anotherCubeImages {
+  position: absolute;
+}
+
+.cubeTen {
+  position: absolute;
+  width: 2.6rem;
+  margin-left: 38rem;
+  rotate: -12deg;
+  margin-top: -4rem;
+  z-index: -1;
+}
+.cubeEleven {
+  z-index: -1;
+  margin-left: 78rem;
+  position: absolute;
+  width: 2.6rem;
+  rotate: 3deg;
+}
+.cubeTwelve {
+  z-index: -1;
+  position: absolute;
+  width: 2.6rem;
+  margin-left: 48rem;
+  margin-top: -21rem;
+}
+
+/* animationCube */
+.cubeSeven {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 6s, floating 7s infinite;
+}
+.cubeEight {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5.5s, floating 6s infinite;
+}
+.cubeNine {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 4.5s, floating 6.8s infinite;
+}
+
+.cubeTen {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 6s, floating 7s infinite;
+}
+.cubeEleven {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5s, floating 6s infinite;
+}
+.cubeTwelve {
+  /* position: absolute; */
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5.5s, floating 6.5s infinite;
+}
+
+@keyframes fadeInFromTop {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes floating {
+  0% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+  25% {
+    transform: translate(5%, 15%) rotate(360deg);
+  }
+  50% {
+    transform: translate(10%, 5%) rotate(360deg);
+  }
+  75% {
+    transform: translate(0%, 15%) rotate(360deg);
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(360deg);
+  }
+}
+/* sectionEnds */
+
+/* socialMediaSection */
+/* socialMediaHeader */
+.socialMediaContainer {
+  background-color: #242323;
+  height: 40rem;
+  margin-top: -3rem;
+}
+
+.socialHead {
+  margin-left: 1.8rem;
+  font-weight: 500;
+  font-size: 2rem;
+  padding-top: 8rem;
+}
+
+/* iconsHeader */
+.codeIconsImages {
+  position: absolute;
+}
+.codeImg {
+  width: 2.6rem;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5.5s, floating 6.5s infinite;
+  margin-left: -1.5rem;
+  margin-top: -6.5rem;
+  rotate: 15deg;
+  position: absolute;
+}
+.chatIconsImages {
+  position: absolute;
+}
+.chatImg {
+  z-index: -1;
+  margin-left: 42rem;
+  margin-top: -1.5rem;
+  rotate: 10deg;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 6.5s, floating 5.5s infinite;
+  width: 2.6rem;
+}
+
+.codersSpan {
+  word-spacing: -5px;
+  color: aqua;
+  font-weight: 600;
+}
+.worldSpan {
+  color: aqua;
+}
+
+.socialMediaTagline {
+  margin-left: 4.6rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+#connect {
+  color: aqua;
+}
+#engaged {
+  color: aqua;
+}
+#social {
+  color: aqua;
+}
+#media {
+  color: aqua;
+}
+
+/* waveSection */
+.waveImages {
+  margin-top: 6rem;
+}
+/* sectionEnd */
 
 /* responsive-Media */
 /* navbarResponsive */
@@ -692,14 +1065,14 @@ a::selection {
   .nav-menu {
     cursor: pointer;
     margin-top: -1.9rem;
-    margin-left: -12rem;
+    margin-left: -9rem;
   }
 }
 @media screen and (max-width: 450px) {
   /* nav-section */
   .navbar {
-    margin-left: -1rem;
-    width: 27rem;
+    margin-left: -1.5rem;
+    width: 26.8rem;
     margin-left: 1.2rem;
   }
   .nav-brand {
@@ -728,7 +1101,7 @@ a::selection {
   .navbar {
     margin-left: -0rem;
     margin-left: 0.9rem;
-    width: 21.6rem;
+    width: 21rem;
     height: 4.8rem;
   }
   .nav-menu {
@@ -977,7 +1350,7 @@ a::selection {
   .heroHead {
     width: 72%;
     margin-left: -0rem;
-    margin-left: 3.7rem;
+    margin-left: 3.6rem;
   }
   .heroText {
     margin-left: -0rem;
@@ -985,11 +1358,11 @@ a::selection {
   }
   .socialContent {
     margin-left: -0rem;
-    margin-left: 12rem;
+    margin-left: 11.8rem;
   }
   .heroBtn {
     margin-left: -0rem;
-    margin-left: 8rem;
+    margin-left: 7.5rem;
   }
 
   /* cubesection */
@@ -1008,10 +1381,10 @@ a::selection {
 
   /* profileSection */
   .heroProfileBg {
-    margin-left: 1.2rem;
+    margin-left: 1rem;
   }
   .heroProfile {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
   }
 }
 
@@ -1116,7 +1489,7 @@ a::selection {
   /* profileSection */
   .aboutProfile {
     width: 22rem;
-    margin-left: -7rem;
+    margin-left: -16rem;
   }
 
   /* HeaderSection */
@@ -1295,11 +1668,11 @@ a::selection {
 @media screen and (max-width: 362px) {
   /* headerSection */
   .aboutMe {
-    width: 23.3rem;
+    width: 22.7rem;
   }
 
   .aboutHeader {
-    margin-left: 0.4rem;
+    margin-left: 0.2rem;
     font-size: 1rem;
   }
   .aboutText {
@@ -1353,10 +1726,421 @@ a::selection {
 
   /* waveSection */
   .greyWaveSvg {
-    width: 23.3rem;
+    width: 22.7rem;
   }
   .waveSvg {
-    width: 23.3rem;
+    width: 22.7rem;
   }
 }
 /* sectiondEnds */
+
+/* projectsSection */
+/* maxWidthSection */
+@media screen and (max-width: 963px) {
+  /* headerCube */
+  .headerCubeOne {
+    margin-left: 3.5rem;
+    width: 2.4rem;
+  }
+  .headerCubeTwo {
+    width: 2.4rem;
+    margin-left: 36rem;
+  }
+
+  /* projectsSection */
+  .projectsLandingPageText {
+    font-size: 1.8rem;
+    margin-left: 32rem;
+  }
+  .landingPageTaglineText {
+    font-size: 0.8rem;
+    margin-left: 36.5rem;
+  }
+  .landingPageTagline {
+    width: 85%;
+  }
+  .projectsBtn {
+    margin-left: 20rem;
+  }
+
+  /* imagesSection */
+  .imagesLandingPage {
+    width: 27rem;
+    margin-left: 4rem;
+  }
+
+  /* cubeSection */
+  .cubeSeven {
+    margin-top: -15rem;
+    margin-left: 0.5rem;
+    width: 2.4rem;
+  }
+  .cubeEight {
+    width: 2.4rem;
+    margin-left: 4rem;
+  }
+  .cubeNine {
+    width: 2.4rem;
+    margin-left: 32rem;
+    rotate: 8deg;
+  }
+
+  /* anotherProjectsSection */
+  .anotherProjectsHead {
+    font-size: 1.8rem;
+    margin-left: 4.5rem;
+  }
+  .anotherProjectsTaglineText {
+    margin-left: 4.5rem;
+  }
+  .anotherBtn {
+    margin-left: 4.6rem;
+  }
+
+  /* imagesSection */
+  .anotherImages {
+    width: 27rem;
+    margin-top: 0rem;
+    margin-top: -20rem;
+    margin-left: 22rem;
+  }
+
+  /* cubeSection */
+  .cubeTen {
+    margin-left: 56rem;
+    margin-top: -6rem;
+  }
+  .cubeEleven {
+    margin-left: 23rem;
+    margin-top: -2.5rem;
+    rotate: -5deg;
+  }
+  .cubeTwelve {
+    margin-left: 25rem;
+    margin-top: -15rem;
+  }
+
+  /* waveSection */
+  .waveImages {
+    width: 61rem;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  /* headerSection */
+  .projectsHeader {
+    font-size: 1.7rem;
+    margin-top: -0rem;
+    margin-top: 5rem;
+  }
+  /* headerCube */
+  .headerCubeOne {
+    margin-left: 0rem;
+    margin-left: -2.5rem;
+    z-index: -1;
+  }
+  .headerCubeTwo {
+    z-index: -1;
+    margin-left: 20rem;
+    margin-top: 0rem;
+  }
+
+  .projectsTaglineParagraph {
+    font-size: 1rem;
+  }
+
+  /* recentProjects */
+  .projectsLandingPageText {
+    margin-top: 6rem;
+    font-size: 1.6rem;
+    margin-left: 0rem;
+    margin-left: -1rem;
+  }
+  .landingPageTaglineText {
+    margin-left: 4.5rem;
+    margin-top: 12rem;
+    text-align: center;
+    position: static;
+    rotate: -0.5deg;
+    z-index: -1;
+  }
+  .landingSpan {
+    color: #83468c;
+  }
+  .landingPageTagline {
+    position: static;
+    width: 80%;
+  }
+  .projectsBtn {
+    margin-left: -2.5rem;
+    color: #83468c;
+  }
+
+  /* imagesSection */
+  .imagesLandingPage {
+    width: 19rem;
+    margin-top: -18rem;
+    position: absolute;
+    margin-left: 4.2rem;
+    z-index: -1;
+    rotate: -0.5deg;
+  }
+
+  /* cubeSection */
+  .cubeSeven {
+    z-index: -1;
+    margin-top: -20rem;
+  }
+  .cubeEight {
+    z-index: -1;
+    margin-left: 2rem;
+    margin-top: -6rem;
+  }
+  .cubeNine {
+    margin-top: -12rem;
+    z-index: -1;
+    margin-left: 24rem;
+  }
+
+  /* anotherProjects */
+  .anotherProjectsHead {
+    font-size: 1.7rem;
+    margin-top: 7rem;
+  }
+  .anotherProjectsTaglineText {
+    margin-top: 11rem;
+    position: relative;
+    font-size: 0.8rem;
+    rotate: 1deg;
+    text-align: center;
+    margin-left: -0rem;
+    margin-left: 5rem;
+  }
+  .anotherProjectsTagline {
+    width: 80%;
+  }
+  .anotherBtn {
+    margin-left: 9rem;
+    margin-top: -0rem;
+    margin-top: 0.8rem;
+  }
+  /* imageSection */
+  .anotherImages {
+    width: 19rem;
+    margin-left: -10rem;
+    margin-top: -17.5rem;
+    position: absolute;
+  }
+
+  /* cubeSection */
+  .cubeTen {
+    margin-left: 23rem;
+    width: 2.4rem;
+    margin-top: -20rem;
+  }
+  .cubeEleven {
+    margin-left: 21.5rem;
+    width: 2.4rem;
+    margin-top: -6rem;
+    rotate: 13deg;
+  }
+  .cubeTwelve {
+    width: 2.4rem;
+    margin-left: 1rem;
+    rotate: -5deg;
+  }
+
+  /* waveSection */
+  .waveImages {
+    width: 28.6rem;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  /* headerSection */
+  .projectsHeader {
+    font-size: 1.6rem;
+  }
+  .projectsTaglineParagraph {
+    font-size: 0.9rem;
+  }
+
+  /* headerCubeSection */
+  .headerCubeOne {
+    margin-left: -3rem;
+    margin-top: -6rem;
+    width: 2.2rem;
+  }
+  .headerCubeTwo {
+    margin-left: 17.5rem;
+    width: 2.2rem;
+  }
+
+  /* recentProjects */
+  .projectsLandingPageText {
+    font-size: 1.4rem;
+    rotate: -1deg;
+    margin-top: 4rem;
+  }
+  .projectsBtn {
+    rotate: -1deg;
+  }
+
+  /* imagesSection */
+  .imagesLandingPage {
+    margin-left: 2.8rem;
+    width: 19rem;
+  }
+
+  /* cubeSection */
+  .cubeSeven {
+    margin-left: 0rem;
+    width: 2.2rem;
+  }
+  .cubeNine {
+    margin-left: 22rem;
+    width: 2.2rem;
+  }
+  .cubeEight {
+    width: 2.2rem;
+  }
+  /* waveSection */
+  .waveImages {
+    width: 24.6rem;
+  }
+
+  /* anotherProjects */
+  /* headerSection */
+  .anotherProjectsHead {
+    font-size: 1.7rem;
+    margin-top: 3.5rem;
+    rotate: 1deg;
+  }
+  .anotherProjectsTaglineText {
+    margin-left: -0rem;
+    margin-left: 3rem;
+  }
+  .anotherBtn {
+    margin-left: -0rem;
+    margin-left: 7.5rem;
+    rotate: 1deg;
+  }
+  /* imagesSection */
+  .anotherImages {
+    width: 19rem;
+    margin-left: -9.7rem;
+  }
+
+  /* cubeSection */
+  .cubeTen {
+    margin-left: 21rem;
+  }
+  .cubeEleven {
+    margin-left: 20rem;
+  }
+  .cubeTwelve {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  /* headerSection */
+  .projectsHeader {
+    font-size: 1.6rem;
+    margin-top: 7.5rem;
+  }
+  .projectsTaglineParagraph {
+    font-size: 0.8rem;
+  }
+
+  /* cubeHeader */
+  .headerCubeOne {
+    width: 2rem;
+    margin-left: -3.2rem;
+    margin-top: -5.5rem;
+  }
+  .headerCubeTwo {
+    width: 2rem;
+    margin-left: 16.5rem;
+  }
+
+  /* wavesSection */
+  .waveImages {
+    width: 22.6rem;
+  }
+
+  /* recentProjects */
+  .projectsLandingPageText {
+    font-size: 1.3rem;
+    margin-top: 3.8rem;
+  }
+  .landingPageTaglineText {
+    margin-left: 3.1rem;
+    margin-top: 10.7rem;
+  }
+  .landingPageTagline {
+    width: 85%;
+  }
+  .projectsBtn {
+    margin-left: -1.5rem;
+  }
+
+  /* imagesSection */
+  .imagesLandingPage {
+    margin-left: 2.3rem;
+    width: 18rem;
+    margin-top: -17.5rem;
+  }
+
+  /* cubeSection */
+  .cubeSeven {
+    margin-left: 0rem;
+    width: 2rem;
+  }
+  .cubeEight {
+    width: 2rem;
+  }
+  .cubeNine {
+    margin-left: 20.6rem;
+    width: 2rem;
+    z-index: -2;
+  }
+
+  /* anotherProjects */
+  /* headerSection */
+  .anotherProjectsHead {
+    font-size: 1.6rem;
+  }
+  .anotherProjectsTaglineText {
+    margin-left: 4rem;
+  }
+  .anotherBtn {
+    margin-left: 7rem;
+  }
+
+  /* imagesSection */
+  .anotherImages {
+    width: 18rem;
+    margin-left: -9rem;
+  }
+
+  /* cubeSection */
+  .cubeTen {
+    width: 2rem;
+    margin-left: 20rem;
+  }
+  .cubeEleven {
+    width: 2rem;
+  }
+  .cubeTwelve {
+    margin-left: 0rem;
+    width: 2rem;
+  }
+
+  /* waveSection */
+  .waveImages {
+    margin-top: 5.5rem;
+    width: 22.7rem;
+  }
+}
+/* sectionEnd */
