@@ -13,6 +13,10 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+p {
+  color: white;
+}
+
 /* link-style */
 .active-link:visited {
   color: white;
@@ -254,7 +258,7 @@ a::selection {
   overflow: hidden;
   width: 30rem;
   display: block;
-  margin-right: -48rem;
+  margin-right: -46rem;
   margin-top: -25rem;
 }
 /* ENDS */
@@ -420,6 +424,7 @@ a::selection {
 .supportContent p {
   font-size: 1.8rem;
   margin-top: 0.65rem;
+  margin-left: 0.5rem;
 }
 .supportContent .githubText {
   margin-top: 0.7rem;
@@ -518,10 +523,11 @@ a::selection {
 
 /* aboutMeSection */
 .aboutMe {
+  margin-top: -1.5rem;
   background-color: #242323;
   height: 38rem;
-  margin-top: -1.5rem;
 }
+
 .aboutHeader {
   color: white;
   font-size: 1.8rem;
@@ -948,15 +954,17 @@ a::selection {
 /* socialMediaHeader */
 .socialMediaContainer {
   background-color: #242323;
-  height: 40rem;
+  height: 78rem;
   margin-top: -3rem;
+  position: absolute;
+  z-index: -1;
 }
 
 .socialHead {
   margin-left: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2rem;
-  padding-top: 8rem;
+  padding-top: 13rem;
 }
 
 /* iconsHeader */
@@ -973,6 +981,7 @@ a::selection {
   rotate: 15deg;
   position: absolute;
 }
+
 .chatIconsImages {
   position: absolute;
 }
@@ -990,7 +999,7 @@ a::selection {
 .codersSpan {
   word-spacing: -5px;
   color: aqua;
-  font-weight: 600;
+  font-weight: 700;
 }
 .worldSpan {
   color: aqua;
@@ -1014,9 +1023,248 @@ a::selection {
   color: aqua;
 }
 
+/* mainMenuStyle */
+.headlineText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 6rem;
+  margin-left: 24.5rem;
+}
+
+.mainMenuParagraph {
+  font-style: italic;
+  font-size: 1rem;
+  opacity: 0.9;
+  z-index: -1;
+  margin-left: 21rem;
+  margin-top: 0.8rem;
+}
+.mainMenuText {
+  text-align: center;
+  width: 85%;
+}
+
+.mainBtn {
+  border: none;
+  box-shadow: 7px 7px aqua;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  width: 7.5rem;
+  height: 2.8rem;
+  font-size: 0.95rem;
+  color: rgb(4, 176, 176);
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: 34.1rem;
+}
+.mainBtn:hover {
+  color: rgb(2, 145, 145);
+}
+
+/* socialSection */
+/* .mainInsImages {
+  margin-left: 37rem;
+} */
+
+/* imagesSection */
+.mainMenuImagesContainer {
+  position: absolute;
+}
+
+/* .blobImg {
+  width: 31rem;
+  position: absolute;
+  margin-left: -16rem;
+  margin-top: -24rem;
+} */
+.fbImages {
+  margin-left: -15.5rem;
+  margin-top: -27rem;
+  width: 37rem;
+  rotate: -2deg;
+  position: relative;
+}
+.insImages {
+  margin-left: -20rem;
+  margin-top: -22rem;
+  z-index: -0;
+  width: 36rem;
+  rotate: -8deg;
+  position: relative;
+}
+
+/* iconsSection */
+.menuIcons {
+  position: absolute;
+}
+
+.mainIconsOne {
+  width: 2.6rem;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 6s, floating 7s infinite;
+  position: absolute;
+  margin-left: 7.5rem;
+  margin-top: -21.5rem;
+  rotate: -7deg;
+  cursor: pointer;
+  transition: width 0.25s;
+}
+.mainIconsOne:hover {
+  width: 3rem;
+}
+.mainIconsTwo {
+  transform: scaleX(-1);
+  width: 2.6rem;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5s, floating 6.5s infinite;
+  position: absolute;
+  margin-left: 8rem;
+  cursor: pointer;
+  transition: width 0.25s;
+  rotate: 8deg;
+  margin-top: 1.5rem;
+}
+.mainIconsTwo:hover {
+  width: 3rem;
+}
+.mainIconsThree {
+  width: 2.6rem;
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 7s, floating 5.5s infinite;
+  cursor: pointer;
+  transition: width 0.25s;
+  margin-left: -13.5rem;
+  margin-top: -10rem;
+  rotate: 5deg;
+}
+.mainIconsThree:hover {
+  width: 3rem;
+}
 /* waveSection */
 .waveImages {
-  margin-top: 6rem;
+  margin-top: 3rem;
+}
+.socialMediaWaveImages {
+  margin-top: 1rem;
+}
+
+/* socialImagesSlider */
+.menuText {
+  margin-left: 9.5rem;
+  margin-top: 14rem;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+/* headerIcons */
+.menuIcons {
+  position: absolute;
+}
+
+.menuIconsOne {
+  width: 2.6rem;
+  cursor: pointer;
+  margin-top: 17.5rem;
+  rotate: -5deg;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 7s, floating 5.5s infinite;
+  position: absolute;
+  margin-left: 44rem;
+  transition: width 0.2s;
+}
+.menuIconsOne:hover {
+  width: 3rem;
+}
+.menuIconsTwo {
+  margin-top: 11rem;
+  cursor: pointer;
+  width: 2.6rem;
+  margin-left: 4rem;
+  rotate: 8deg;
+  left: 15%;
+  top: 15%;
+  animation: fadeInFromTop 5.5s, floating 6.5s infinite;
+  position: absolute;
+  transition: width 0.2s;
+}
+.menuIconsTwo:hover {
+  width: 3rem;
+}
+
+.menuSection {
+  display: grid;
+  grid-template-columns: 20px 20px 20px 20px;
+}
+.menuWrapper {
+  display: grid;
+  grid-template-columns: 20px 20px;
+  margin-left: 3rem;
+  opacity: 0.6;
+}
+
+/* insSection */
+.insMenuImages {
+  margin-top: 17rem;
+  cursor: pointer;
+  width: 2.2rem;
+  transition: width 0.2s;
+}
+.insText {
+  transition: width 0.2s;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 17rem;
+  margin-left: 1.5rem;
+}
+
+/* fbSection */
+.fbMenuImages {
+  margin-top: 17rem;
+  margin-left: 10rem;
+  cursor: pointer;
+  width: 2.2rem;
+}
+.fbText {
+  margin-top: 17rem;
+  cursor: pointer;
+  margin-left: 11.5rem;
+  font-size: 1.4rem;
+}
+
+/* gitSection */
+.gitMenuImages {
+  width: 2.2rem;
+  margin-top: 17rem;
+  cursor: pointer;
+  margin-left: 20rem;
+}
+.gitText {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 21.5rem;
+  margin-top: 17rem;
+}
+
+/* twSection */
+.twMenuImages {
+  cursor: pointer;
+  margin-top: 17rem;
+  width: 1.9rem;
+  margin-left: 28rem;
+}
+.twText {
+  font-size: 1.4rem;
+  margin-top: 17rem;
+  cursor: pointer;
+  margin-left: 29rem;
 }
 /* sectionEnd */
 
@@ -1086,7 +1334,7 @@ a::selection {
     width: 30%;
   }
 }
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 392px) {
   .navbar {
     width: 22.7rem;
     margin-left: -0rem;
@@ -1298,7 +1546,7 @@ a::selection {
   }
 }
 
-@media screen and (max-width: 394px) {
+@media screen and (max-width: 392px) {
   /* headerSection */
   .heroHead {
     width: 65%;
@@ -1432,7 +1680,7 @@ a::selection {
   }
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 392px) {
   /* supportBrandSection */
   .creditParagraph {
     margin-top: -0rem;
@@ -1457,29 +1705,34 @@ a::selection {
 
   /* cubeSection */
   .cubeFour {
-    margin-left: 15rem;
+    margin-left: 17rem;
+    margin-top: 1rem;
     width: 2.2rem;
   }
   .cubeFive {
     width: 2.2rem;
     margin-left: -2.2rem;
+    margin-top: -8rem;
   }
 }
 
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 362px) {
   /* socialSection */
   .socialContent .githubPage {
-    margin-left: -2rem;
+    margin-left: -1rem;
   }
   .socialContent img {
-    margin-left: -2rem;
+    margin-left: -1rem;
   }
 
   /* cubeSection */
   .cubeFour {
     width: 2.2rem;
+    margin-left: 16rem;
+    margin-top: 0rem;
   }
   .cubeFive {
+    margin-top: -8rem;
     width: 2.2rem;
   }
 }
@@ -1604,7 +1857,7 @@ a::selection {
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 392px) {
   /* headerSection */
   .aboutMe {
     height: 42.6rem;
@@ -1655,13 +1908,13 @@ a::selection {
     margin-top: -1.8rem;
     margin-left: -0rem;
     margin-left: 3.4rem;
-    width: 2.2rem;
+    width: 2.1rem;
   }
   .cubeSix {
-    width: 2.2rem;
+    width: 2.1rem;
   }
   .layersOne {
-    width: 2.2rem;
+    width: 2.1rem;
   }
 }
 
@@ -1704,14 +1957,14 @@ a::selection {
   .cubeSix {
     margin-top: 0rem;
     margin-top: -13rem;
-    width: 2.2rem;
+    width: 2rem;
     margin-left: -2rem;
   }
   .layersOne {
-    width: 2.2rem;
+    width: 2rem;
   }
   .packageOne {
-    width: 2.2rem;
+    width: 2rem;
   }
   /* profileSection */
   /* .aboutImagesProfile {
@@ -1956,7 +2209,7 @@ a::selection {
   }
 }
 
-@media screen and (max-width: 391px) {
+@media screen and (max-width: 392px) {
   /* headerSection */
   .projectsHeader {
     font-size: 1.6rem;
@@ -1969,11 +2222,11 @@ a::selection {
   .headerCubeOne {
     margin-left: -3rem;
     margin-top: -6rem;
-    width: 2.2rem;
+    width: 2.1rem;
   }
   .headerCubeTwo {
     margin-left: 17.5rem;
-    width: 2.2rem;
+    width: 2.1rem;
   }
 
   /* recentProjects */
@@ -1995,14 +2248,14 @@ a::selection {
   /* cubeSection */
   .cubeSeven {
     margin-left: 0rem;
-    width: 2.2rem;
+    width: 2.1rem;
   }
   .cubeNine {
     margin-left: 22rem;
-    width: 2.2rem;
+    width: 2.1rem;
   }
   .cubeEight {
-    width: 2.2rem;
+    width: 2.1rem;
   }
   /* waveSection */
   .waveImages {
@@ -2034,11 +2287,14 @@ a::selection {
   /* cubeSection */
   .cubeTen {
     margin-left: 21rem;
+    width: 2.1rem;
   }
   .cubeEleven {
     margin-left: 20rem;
+    width: 2.1rem;
   }
   .cubeTwelve {
+    width: 2.1rem;
     margin-left: 0rem;
   }
 }
@@ -2144,3 +2400,414 @@ a::selection {
   }
 }
 /* sectionEnd */
+
+/* socialMediaResponsive */
+/* maxWidthSection */
+@media screen and (max-width: 963px) {
+  /* headSection */
+  .socialMediaContainer {
+    margin-top: -1rem;
+    width: 61rem;
+    height: 73rem;
+  }
+
+  .socialHead {
+    margin-left: -1.4rem;
+    font-size: 1.8rem;
+  }
+  .socialMediaTagline {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+  }
+  /* headerIconsSection */
+  .codeImg {
+    margin-left: -4.5rem;
+    width: 2.4rem;
+  }
+  .chatImg {
+    width: 2.4rem;
+    margin-left: 36rem;
+    margin-top: -1.8rem;
+  }
+
+  /* waveSection */
+  .waveImages {
+    width: 61rem;
+  }
+  .socialMediaWaveImages {
+    width: 61rem;
+    margin-top: 6rem;
+  }
+
+  /* mainMenuSection */
+  /* imagesSection */
+  .fbImages {
+    width: 32rem;
+    margin-top: -25rem;
+    margin-left: -12rem;
+  }
+  .insImages {
+    margin-left: -15rem;
+    width: 31rem;
+    margin-top: -19rem;
+  }
+
+  /* headerSection */
+  .headlineText {
+    font-size: 1.3rem;
+    margin-left: 18rem;
+  }
+  .mainMenuParagraph {
+    font-size: 0.8rem;
+    margin-left: 17rem;
+  }
+  .mainMenuText {
+    width: 92%;
+  }
+  .mainBtn {
+    margin-left: 26.5rem;
+    margin-top: 1rem;
+  }
+
+  /* menuIconsSection */
+  .mainIconsOne {
+    margin-top: -18.5rem;
+    margin-left: 7rem;
+    width: 2.4rem;
+  }
+  .mainIconsTwo {
+    width: 2.4rem;
+    margin-left: 9rem;
+  }
+  .mainIconsThree {
+    width: 2.4rem;
+    margin-left: -9rem;
+  }
+
+  /* socialImagesSection */
+  .menuText {
+    margin-left: 6.5rem;
+  }
+  /* headerIconsSection */
+  .menuIconsOne {
+    margin-left: 38rem;
+    width: 2.4rem;
+  }
+  .menuIconsTwo {
+    width: 2.4rem;
+    margin-left: 2rem;
+    margin-top: 12rem;
+  }
+
+  .menuWrapper {
+    margin-left: -1rem;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  /* headSection */
+  .socialMediaContainer {
+    width: 28.6rem;
+    margin-top: -1rem;
+    height: 64rem;
+  }
+  .socialHead {
+    font-size: 1.2rem;
+    margin-left: -10.5rem;
+    margin-top: -5rem;
+  }
+  .socialMediaTagline {
+    font-size: 0.7rem;
+    margin-left: -10rem;
+  }
+
+  /* headIconsImagesSection */
+  .codeImg {
+    margin-left: -12.5rem;
+    margin-top: -5.5rem;
+  }
+  .chatImg {
+    margin-left: 13rem;
+  }
+
+  /* imagesSection */
+  .mainMenuImagesContainer {
+    margin-top: 16rem;
+    margin-left: 2.8rem;
+  }
+  .fbImages {
+    width: 24rem;
+  }
+  .insImages {
+    width: 23rem;
+  }
+
+  /* iconsSection */
+  .mainIconsOne {
+    margin-top: 1rem;
+    margin-left: 8rem;
+  }
+  .mainIconsTwo {
+    margin-top: 14.5rem;
+  }
+  .mainIconsThree {
+    margin-top: 10rem;
+  }
+
+  /* headerSection */
+  .headlineText {
+    margin-left: -8.8rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+  .mainMenuParagraph {
+    margin-top: 17.5rem;
+    margin-left: -12.8rem;
+    position: absolute;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+  .mainMenuText {
+    width: 0%;
+  }
+  .mainBtn {
+    margin-top: 24.5rem;
+    position: absolute;
+    margin-left: -2.2rem;
+  }
+
+  /* socialSlideImagesSection */
+  .socialMenuHeader {
+    margin-top: 20rem;
+    margin-left: -12rem;
+  }
+  .menuText {
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    margin-top: 13rem;
+  }
+
+  /* waveSection */
+  .socialMediaWaveImages {
+    width: 28.6rem;
+    margin-top: 3.5rem;
+  }
+  .waveImages {
+    width: 28.6rem;
+  }
+
+  /* menuSection */
+  .menuSection {
+    display: grid;
+    grid-template-columns: 10px 10px;
+  }
+  .menuWrapper {
+    margin-left: -6.5rem;
+    margin-top: -2rem;
+  }
+  /* menuSectionImages */
+  .insMenuImages {
+    width: 1.9rem;
+    margin-top: 17.1rem;
+  }
+  .insText {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+    margin-top: 17.2rem;
+  }
+
+  .fbMenuImages {
+    width: 1.9rem;
+    margin-left: 8rem;
+  }
+  .fbText {
+    margin-left: 9rem;
+    margin-top: 17.2rem;
+    font-size: 1.1rem;
+  }
+
+  .gitMenuImages {
+    width: 1.9rem;
+    margin-left: 1.5rem;
+    margin-top: 2.8rem;
+  }
+  .gitText {
+    font-size: 1.1rem;
+    margin-top: 3rem;
+    margin-left: 2.5rem;
+  }
+
+  .twMenuImages {
+    width: 1.7rem;
+    margin-left: 8.2rem;
+    margin-top: 2.8rem;
+  }
+  .twText {
+    margin-top: 3rem;
+    margin-left: 9rem;
+    font-size: 1.1rem;
+  }
+
+  /* iconsSection */
+  .menuIconsOne {
+    margin-left: 25rem;
+    width: 2.2rem;
+    margin-top: 17rem;
+  }
+  .menuIconsTwo {
+    width: 2.2rem;
+    margin-left: 0rem;
+    margin-top: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  /* headSection */
+  .socialMediaContainer {
+    width: 24.6rem;
+    height: 62rem;
+  }
+
+  .socialHead {
+    font-size: 1.1rem;
+    margin-left: -11.5rem;
+    text-align: center;
+  }
+  /* .socialHeader {
+    width: 70%;
+  } */
+
+  .socialMediaTagline {
+    margin-left: -10.4rem;
+  }
+  /* headerSection */
+  .mainMenuParagraph {
+    margin-left: -11.3rem;
+    font-size: 0.6rem;
+  }
+
+  .mainBtn {
+    margin-top: 23.5rem;
+  }
+
+  /* headerIconsImages */
+  .codeImg {
+    width: 2.1rem;
+    margin-left: -12rem;
+    margin-top: -5rem;
+  }
+  .chatImg {
+    width: 2.1rem;
+    margin-left: 11rem;
+    margin-top: 0rem;
+  }
+
+  /* waveSection */
+  .waveImages {
+    margin-top: 1rem;
+    width: 24.6rem;
+  }
+  .socialMediaWaveImages {
+    width: 24.6rem;
+  }
+
+  /* menuIconsSection */
+  .mainIconsOne {
+    width: 2.1rem;
+  }
+  .mainIconsTwo {
+    width: 2.1rem;
+  }
+  .mainIconsThree {
+    width: 2.1rem;
+  }
+
+  /* headerIconsSection */
+  .menuIconsOne {
+    width: 2.1rem;
+    margin-left: 22rem;
+  }
+  .menuIconsTwo {
+    width: 2.1rem;
+    margin-left: 1rem;
+  }
+
+  /* socialSlideImagesSection */
+  .menuWrapper {
+    margin-left: -7.3rem;
+  }
+
+  .menuText {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  /* headSection */
+  .socialMediaContainer {
+    width: 22.7rem;
+  }
+  .socialHead {
+    font-size: 1rem;
+    margin-left: -10.5rem;
+  }
+  .socialMediaTagline {
+    text-align: center;
+    margin-left: -7.8rem;
+    margin-top: 0.2rem;
+  }
+  .socialTagline {
+    width: 80%;
+  }
+
+  /* headIconsImagesSection */
+  .codeImg {
+    margin-left: -10.5rem;
+    margin-top: -5.5rem;
+  }
+  .chatImg {
+    margin-top: -4rem;
+    margin-left: 10rem;
+  }
+
+  /* headerSection */
+  .mainMenuParagraph {
+    font-size: 0.6rem;
+    width: 90%;
+    margin-left: -8.8rem;
+  }
+  .mainBtn {
+    margin-left: -2.5rem;
+  }
+
+  /* waveSection */
+  .socialMediaWaveImages {
+    width: 22.7rem;
+  }
+  .waveImages {
+    width: 22.7rem;
+  }
+
+  /* socialSildeImagesSection */
+  .socialMenuHeader {
+    margin-left: -11rem;
+  }
+  .menuWrapper {
+    margin-left: -6.5rem;
+  }
+
+  .insText {
+    margin-top: 17.4rem;
+  }
+  .fbText {
+    margin-top: 17.3rem;
+  }
+  .gitText {
+    margin-top: 3.2rem;
+  }
+
+  /* iconsMenuSection */
+  .menuIconsOne {
+    margin-left: 21rem;
+  }
+}
