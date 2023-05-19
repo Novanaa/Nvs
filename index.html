@@ -82,7 +82,7 @@
                       </li>
                       <li style="margin-top: -2rem" class="li-nav">
                         <a
-                          href="./components/contact/index.html"
+                          href="#contact"
                           class="active-link"
                           style="text-decoration: none"
                         >
@@ -699,10 +699,121 @@
     </div>
     <!-- sectionEnds -->
 
+    <!-- contactSection -->
+    <div class="contact" id="contact">
+      <div class="contactContainer">
+        <div class="contactWrapper">
+          <div class="contactHead">
+            <p class="contactHeadText">
+              Have Some <span id="ques">Question?</span>
+            </p>
+          </div>
+          <div class="contactTagline">
+            <p class="contactDescription">
+              <span id="ques">Question Everything</span>, Discover Limitless
+              Answers.
+            </p>
+          </div>
+          <div class="contactHeaderIcons">
+            <div class="headerContactIconsWrapper">
+              <img src="assest/icons/cube.svg" class="headerContactIconsOne" />
+              <img src="assest/icons/cube.svg" class="headerContactIconsTwo" />
+            </div>
+          </div>
+          <form class="contactForm">
+            <div class="formContainer">
+              <div class="formHeader">
+                <div class="formHeadWrapper">
+                  <p class="formHeadText">
+                    <span id="contact">Contact</span> Me
+                  </p>
+                </div>
+              </div>
+              <div class="formGroup">
+                <div class="inputWrapper" onsubmit="sendEmail()">
+                  <img src="assest/icons/user.svg" class="nameImages" />
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="Name"
+                    class="nameInput"
+                    id="nameInput"
+                  />
+                </div>
+
+                <div class="inputWrapper" onsubmit="sendEmail()">
+                  <img src="assest/icons/mail.svg" class="mailImages" />
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    name="Email"
+                    class="emailInput"
+                    id="emailInput"
+                    title="must contain '@' in email section"
+                    pattern="example@gmail.com"
+                  />
+                </div>
+                <div class="inputWrapper" onsubmit="sendEmail()">
+                  <img src="assest/icons/phone.svg" class="honeImages" />
+                  <input
+                    type="number"
+                    placeholder="Phone Number"
+                    name="number"
+                    class="numberInput"
+                    id="numberInput"
+                  />
+                </div>
+                <div class="inputWrapper" onsubmit="sendEmail()">
+                  <img
+                    src="assest/icons/message-square.svg"
+                    class="messegeImages"
+                  />
+                  <textarea
+                    name="Messege"
+                    id="messegeArea"
+                    cols="74"
+                    rows="6"
+                    class="messegeArea"
+                    placeholder="Messege"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="contactCta">
+            <div class="contactButton">
+              <button type="submit" class="contactBtn" onclick="contactBtn()">
+                Send Messege
+              </button>
+            </div>
+          </div>
+          <div class="contactIcons">
+            <div class="iconsContactWrapper">
+              <img src="assest/icons/cube.svg" class="contactCubeOne" />
+              <img src="assest/icons/cube.svg" class="contactCubeTwo" />
+              <img src="assest/icons/cube.svg" class="contactCubeThree" />
+            </div>
+          </div>
+          <div class="contactSvgWaves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#242323"
+                fill-opacity="1"
+                d="M0,128L80,138.7C160,149,320,171,480,165.3C640,160,800,128,960,117.3C1120,107,1280,117,1360,122.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- sectionEnd -->
+
     <!-- Javascript -->
     <script src="./script/navbarScript/menuToggle.js"></script>
     <script src="./script/navbarScript/lightMode.js"></script>
     <script src="./script/projectsScript/openInNewTab.js"></script>
     <script src="./script/socialMediaScript/openLinkInNewTab.js"></script>
+    <script src="./script/contactScript/index.js"></script>
   </body>
 </html>

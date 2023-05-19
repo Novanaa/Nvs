@@ -1,9 +1,6 @@
 // buttonLink
 function mainBtn() {
-  window.open(
-    "https://www.instagram.com/thenavyowll/?igshid=ZDdkNTZiNTM",
-    "_blank"
-  );
+  window.open("./components/social/index.html", "_blank");
 }
 
 // iconsLink
