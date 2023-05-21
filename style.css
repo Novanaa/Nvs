@@ -69,6 +69,7 @@ p {
   margin-left: 5rem;
   width: 5%;
   opacity: 0.9;
+  z-index: 999;
 }
 .ul-nav .li-nav {
   display: flex;
@@ -1271,7 +1272,10 @@ a::selection {
 /* contactSection */
 /* headSection */
 .contactWrapper {
-  padding-top: 10rem;
+  padding-top: 9rem;
+}
+.contactContainer {
+  height: 48rem;
 }
 .contactHeadText {
   font-size: 2.1rem;
@@ -1316,17 +1320,16 @@ a::selection {
 /* formSection */
 .formHeadText {
   margin-top: 5rem;
-  text-align: end;
-  font-size: 1.9rem;
+  text-align: center;
+  font-size: 2rem;
   font-style: italic;
-  font-weight: 500;
-  margin-right: 14.8rem;
+  font-weight: 600;
 }
 #contact {
   color: aqua;
 }
 .formGroup {
-  text-align: end;
+  text-align: center;
 }
 
 .contactBtn {
@@ -1343,7 +1346,7 @@ a::selection {
   height: 2.5rem;
   font-weight: 500;
   font-size: 0.85rem;
-  margin-left: 49.5rem;
+  margin-left: 18.3rem;
 }
 .contactBtn:hover {
   color: rgb(2, 145, 145);
@@ -1360,20 +1363,20 @@ a::selection {
 }
 .inputWrapper {
   margin: 1.5rem;
-  margin-right: 5rem;
+  margin-left: 3.5rem;
 }
 .inputWrapper img {
   width: 1.3rem;
   position: absolute;
   margin-left: 0.8rem;
-  margin-top: 0.7rem;
+  margin-top: 0.9rem;
   z-index: 1;
 }
 
 .nameInput {
   border: none;
-  width: 30rem;
-  height: 3rem;
+  width: 50rem;
+  height: 3.2rem;
   padding: 1rem;
   border-radius: 6px;
   outline: none;
@@ -1393,8 +1396,8 @@ a::selection {
 
 .emailInput {
   border: none;
-  width: 30rem;
-  height: 3rem;
+  width: 50rem;
+  height: 3.2rem;
   padding: 1rem;
   border-radius: 6px;
   outline: none;
@@ -1414,8 +1417,8 @@ a::selection {
 
 .numberInput {
   border: none;
-  width: 30rem;
-  height: 3rem;
+  width: 50rem;
+  height: 3.2rem;
   padding: 1rem;
   border-radius: 6px;
   outline: none;
@@ -1440,8 +1443,8 @@ a::selection {
   background-color: #f1f5f9;
   font-family: "Poppins", sans-serif;
   font-size: 0.8rem;
-  width: 30rem;
-  padding-top: 0.8rem;
+  width: 50rem;
+  padding-top: 0.9rem;
   padding-left: 2.5rem;
   font-style: italic;
   font-weight: 400;
@@ -1465,8 +1468,8 @@ a::selection {
   z-index: -1;
   position: absolute;
   margin-left: 15rem;
-  margin-top: -28rem;
-  display: none;
+  margin-top: -30rem;
+  rotate: 5deg;
 }
 .contactCubeTwo {
   width: 2.6rem;
@@ -1475,24 +1478,30 @@ a::selection {
   animation: fadeInFromTop 6.5s, floating 6s infinite;
   z-index: -1;
   position: absolute;
-  margin-left: 10rem;
-  display: none;
+  margin-left: 69rem;
+  margin-top: -18rem;
+  rotate: 5deg;
 }
 .contactCubeThree {
   width: 2.6rem;
-  display: none;
   left: 15%;
   top: 15%;
   animation: fadeInFromTop 7s, floating 6s infinite;
   z-index: -1;
   position: absolute;
-  margin-left: 20rem;
+  margin-left: 15rem;
+  rotate: -5deg;
+  margin-top: -8rem;
 }
 
 /* wavesSection */
 .contactSvgWaves {
-  margin-top: 8rem;
+  margin-top: 5.5rem;
 }
+/* sectionEnd */
+
+/* footerSection */
+
 /* sectionEnd */
 
 /* responsive-Media */
@@ -1546,9 +1555,8 @@ a::selection {
 @media screen and (max-width: 450px) {
   /* nav-section */
   .navbar {
-    margin-left: -1.5rem;
+    margin-left: 0.7rem;
     width: 26.8rem;
-    margin-left: 1.2rem;
   }
   .nav-brand {
     margin-left: -0rem;
@@ -2734,9 +2742,10 @@ a::selection {
 @media screen and (max-width: 451px) {
   /* headSection */
   .socialMediaContainer {
+    padding-top: -1rem;
     width: 28.6rem;
-    margin-top: -1rem;
-    height: 64rem;
+    height: 68rem;
+    margin-top: 4rem;
   }
   .socialHead {
     font-size: 1.2rem;
@@ -2789,10 +2798,11 @@ a::selection {
   }
   .mainMenuParagraph {
     margin-top: 17.5rem;
-    margin-left: -12.8rem;
+    margin-left: -12.5rem;
     position: absolute;
     font-size: 0.7rem;
     text-align: center;
+    z-index: 1;
   }
   .mainMenuText {
     width: 0%;
@@ -2892,7 +2902,7 @@ a::selection {
   /* headSection */
   .socialMediaContainer {
     width: 24.6rem;
-    height: 62rem;
+    height: 67rem;
   }
 
   .socialHead {
@@ -2900,13 +2910,17 @@ a::selection {
     margin-left: -11.5rem;
     text-align: center;
   }
-  /* .socialHeader {
-    width: 70%;
-  } */
 
   .socialMediaTagline {
     margin-left: -10.4rem;
   }
+
+  /* imagesSection */
+  .fbImages {
+    margin-left: -12.2rem;
+    width: 22.5rem;
+  }
+
   /* headerSection */
   .mainMenuParagraph {
     margin-left: -11.3rem;
@@ -2987,6 +3001,17 @@ a::selection {
     width: 80%;
   }
 
+  /* imagesSection */
+  .fbImages {
+    width: 21rem;
+    margin-left: -12rem;
+    margin-top: -20rem;
+  }
+  .insImages {
+    width: 21rem;
+    margin-left: -14rem;
+  }
+
   /* headIconsImagesSection */
   .codeImg {
     margin-left: -10.5rem;
@@ -3036,5 +3061,213 @@ a::selection {
   /* iconsMenuSection */
   .menuIconsOne {
     margin-left: 21rem;
+  }
+}
+
+/* contactResponsive */
+/* maxWidth */
+@media screen and (max-width: 963px) {
+  /* headerCubeIconsSection */
+  .headerContactIconsOne {
+    margin-left: 14rem;
+    margin-top: -7rem;
+  }
+  .headerContactIconsTwo {
+    margin-left: 47rem;
+  }
+
+  /* formSection */
+  .contactBtn {
+    margin-left: 8.8rem;
+  }
+  .nameInput {
+    width: 45rem;
+  }
+  .emailInput {
+    width: 45rem;
+  }
+  .numberInput {
+    width: 45rem;
+  }
+  .messegeArea {
+    width: 45rem;
+  }
+
+  /* cubeSection */
+  .contactCubeOne {
+    margin-left: 6rem;
+  }
+  .contactCubeTwo {
+    margin-left: 55rem;
+  }
+  .contactCubeThree {
+    margin-left: 5.5rem;
+  }
+
+  /* wavesSection */
+  .contactSvgWaves {
+    width: 61rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  /* headSection */
+  .contactWrapper {
+    padding-top: 8rem;
+  }
+
+  .contactHeadText {
+    font-size: 1.7rem;
+  }
+  .contactDescription {
+    font-size: 1rem;
+  }
+
+  /* formSection */
+  .formHeadText {
+    margin-top: 4rem;
+  }
+
+  /* inputSection */
+  .inputWrapper {
+    margin-left: 2rem;
+  }
+  .nameInput {
+    width: 24rem;
+  }
+  .emailInput {
+    width: 24rem;
+  }
+  .numberInput {
+    width: 24rem;
+  }
+  .messegeArea {
+    width: 24rem;
+  }
+
+  /* headerCubeIconsSection */
+  .headerContactIconsOne {
+    margin-left: 1.5rem;
+    width: 2.4rem;
+  }
+  .headerContactIconsTwo {
+    width: 2.4rem;
+    margin-left: 25.5rem;
+    margin-top: -0.5rem;
+  }
+
+  /* cubeSection */
+  .contactCubeOne {
+    margin-left: 0;
+    display: none;
+  }
+  .contactCubeTwo {
+    margin-left: 0;
+    display: none;
+  }
+  .contactCubeThree {
+    display: none;
+    margin-left: 0;
+  }
+
+  /* wavesSection */
+  .contactSvgWaves {
+    width: 28.6rem;
+  }
+}
+
+@media screen and (max-width: 392px) {
+  /* headSection */
+  .contactHeadText {
+    font-size: 1.6rem;
+  }
+  .contactDescription {
+    font-size: 0.95rem;
+  }
+  .contactBtn {
+    margin-left: 7.4rem;
+  }
+
+  /* headCubeIconsSection */
+  .headerContactIconsOne {
+    width: 2.1rem;
+    margin-left: 0rem;
+    margin-top: -6.2rem;
+  }
+  .headerContactIconsTwo {
+    width: 2.1rem;
+    margin-left: 22.5rem;
+    margin-top: 0rem;
+  }
+
+  /* inputSection */
+  .inputWrapper {
+    margin-left: 1.7rem;
+  }
+
+  .nameInput {
+    width: 21.5rem;
+  }
+  .emailInput {
+    width: 21.5rem;
+  }
+  .numberInput {
+    width: 21.5rem;
+  }
+  .messegeArea {
+    width: 21.5rem;
+  }
+
+  /* waveSection */
+  .contactSvgWaves {
+    width: 24.6rem;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  /* headSection */
+  .contactHeadText {
+    font-size: 1.5rem;
+  }
+  .contactDescription {
+    font-size: 0.85rem;
+  }
+
+  /* formSection */
+  .formHeadText {
+    font-size: 1.6rem;
+  }
+  .inputWrapper {
+    margin-left: 1.5rem;
+  }
+
+  .nameInput {
+    width: 20rem;
+  }
+  .emailInput {
+    width: 20rem;
+  }
+  .numberInput {
+    width: 20rem;
+  }
+  .messegeArea {
+    width: 20rem;
+  }
+  .contactBtn {
+    margin-left: 7rem;
+  }
+
+  /* headerCubeIconsSection */
+  .headerContactIconsOne {
+    margin-top: -5.5rem;
+  }
+  .headerContactIconsTwo {
+    margin-left: 20.2rem;
+  }
+
+  /* wavesSection */
+  .contactSvgWaves {
+    width: 22.7rem;
   }
 }
