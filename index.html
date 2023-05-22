@@ -46,10 +46,16 @@
                 <center>
                   <nav class="nav-menu">
                     <!-- nav-menu -->
-                    <img src="assest/feather/menu.svg" alt="menu-svg" />
+                    <img
+                      src="assest/feather/menu.svg"
+                      alt="menu-svg"
+                      class="navbarMenu"
+                      onclick="navbarMenu()"
+                      id="navMenu"
+                    />
                   </nav>
                   <nav class="active-content">
-                    <ul class="ul-nav">
+                    <ul class="ul-nav" id="ulNav">
                       <li style="margin-top: -1.9rem" class="li-nav">
                         <a
                           href="#Home"
@@ -57,7 +63,11 @@
                           style="margin-right: -0.8rem"
                         >
                           <!-- home-img-navbar -->
-                          <img src="assest/feather/home.svg" alt="home" />
+                          <img
+                            src="assest/feather/home.svg"
+                            alt="home"
+                            class="navHome"
+                          />
                         </a>
                       </li>
                       <li style="margin-top: -2rem" class="li-nav">
@@ -94,7 +104,7 @@
                         <div class="dropdown-select" style="margin-top: -2rem">
                           <!-- nav-dropdown -->
                           <a
-                            onclick="othersToggle('othersParams')"
+                            onclick="othersToggle()"
                             class="active-link others"
                             id="others"
                             style="color: white"
@@ -106,7 +116,7 @@
                             src="assest/icons/chevron-down-regular-24.png"
                             alt="svg"
                             id="downLogo"
-                            onclick="downLogo('logoParams')"
+                            onclick="downLogo()"
                           />
                         </div>
 
@@ -813,8 +823,56 @@
     <footer class="footer">
       <footer class="footerContainer">
         <footer class="footerWrapper">
-          <div class="footerHeader" style="color: white">
-            < Created with 🤍 by Nova />
+          <div class="footerHeader">
+            <p>
+              < <span class="create">Created</span> with 🤍 by
+              <span id="nameItNvaa">Nova</span> />
+            </p>
+          </div>
+          <div class="footerTagline">
+            <p class="footerDescription">
+              <span id="journey">"The journey</span> of a
+              <span id="thousand">thousand miles</span> begins with a
+              <span id="single">single step."</span>
+            </p>
+          </div>
+          <div class="footerMenu">
+            <ul class="footerMenuWrapper">
+              <li class="footerList" id="footerListAbout">About</li>
+              <li class="footerList" id="footerLisContact">Contact</li>
+              <li class="footerList" id="footerListTeams">Teams</li>
+              <li class="footerList" id="footerListTerms">Terms</li>
+              <li class="footerList" id="footerListProjects">Projects</li>
+            </ul>
+          </div>
+          <div class="footerSocialMediaMenu">
+            <div class="footerSosmedWrapper">
+              <img
+                src="assest/icons/InstagramSocial.svg"
+                class="footerIns"
+                onclick="footerIns()"
+              />
+              <img
+                src="assest/icons/icons8-github.svg"
+                class="footerGit"
+                onclick="footerGit()"
+              />
+              <img
+                src="assest/icons/facebook-tag.svg"
+                class="footerFb"
+                onclick="footerFb()"
+              />
+              <img
+                src="assest/feather/twitter.svg"
+                class="footerTw"
+                onclick="footerTw()"
+              />
+            </div>
+          </div>
+          <div class="endCredit">
+            <div class="footerCreditWrapper">
+              <p>© 2023 punyaNova, Inc. All rights reserved.</p>
+            </div>
           </div>
         </footer>
       </footer>
@@ -824,8 +882,10 @@
     <!-- Javascript -->
     <script src="./script/navbarScript/menuToggle.js"></script>
     <script src="./script/navbarScript/lightMode.js"></script>
+    <script src="./script/navbarScript/responsive.js"></script>
     <script src="./script/projectsScript/openInNewTab.js"></script>
     <script src="./script/socialMediaScript/openLinkInNewTab.js"></script>
     <script src="./script/contactScript/index.js"></script>
+    <script src="./script/footerScript/script.js"></script>
   </body>
 </html>
