@@ -1,27 +1,25 @@
 // switch Button Navbar
 let navMenu = document.getElementById("navMenu");
-let listNav = document.querySelector(".ul-nav, .li-nav");
+let listNav = document.querySelector(".ul-nav");
 let navList = document.querySelector(".li-nav");
-let srcValue = "assest/feather/menu.svg";
-let srcX = "assest/feather/x.svg";
+let navContainer = document.getElementById("ulNav");
+let navMenuIcons = document.querySelector(".nav-menu");
 let isShow = true;
 
 const navbarMenu = () => {
-  navMenu.src = srcValue;
-  if (isShow) {
-    navMenu.src = srcValue;
-    isShow = false;
-  } else {
-    navMenu.src = srcX;
-    isShow = true;
-  }
-  listNav.classList.toggle("btnActive");
-  navList.classList.toggle("btnActive");
+  listNav.classList.toggle("navActive");
+  navList.classList.toggle("navActive");
+  navMenuIcons.classList.toggle("opacity");
 };
 
+// windowOnscroll
+window.addEventListener("scroll", () => {
+  listNav.classList.remove("navActive");
+  navList.classList.remove("navActive");
+});
+
 // window onClick
-window.onclick = () => {
-  if (navMenu.src === srcX) {
-    navMenu.src = srcValue;
-  }
-};
+// window.onclick = () => {
+//   // navList.classList.remove("navActive");
+//   // listNav.classList.remove("navActive");
+// };

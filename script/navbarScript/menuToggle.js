@@ -105,7 +105,7 @@ downLogo.onclick = function () {
 };
 
 // window hide elements
-window.onclick = function (e) {
+window.onclick = (e) => {
   if (
     !othersToggle.contains(e.target) &&
     !dropdownMenu.contains(e.target) &&

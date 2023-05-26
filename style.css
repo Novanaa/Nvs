@@ -203,6 +203,8 @@ a::selection {
   font-size: 1rem;
   opacity: 0.8;
   width: 50%;
+  position: relative;
+  z-index: -1;
 }
 #nva {
   color: aqua;
@@ -216,6 +218,7 @@ a::selection {
   margin-top: -0.5rem;
   position: relative;
   height: 80%;
+  z-index: -1;
 }
 .socialMedia::after {
   content: "";
@@ -1607,13 +1610,17 @@ a::selection {
     margin-left: -0rem;
     margin-left: 4rem;
   }
+  #darkMode {
+    margin-right: 8rem;
+    margin-top: 0.2rem;
+  }
   .nav-menu {
     cursor: pointer;
-    margin-top: -1.9rem;
+    margin-top: -2.1rem;
     margin-right: -57rem;
   }
 
-  .ul-nav .li-nav {
+  .li-nav {
     display: none;
   }
   .ul-nav {
@@ -1624,9 +1631,12 @@ a::selection {
   .navbar {
     width: 57.5rem;
   }
+  #darkMode {
+    margin-right: 18rem;
+  }
   .nav-menu {
     cursor: pointer;
-    margin-top: -1.9rem;
+    margin-top: -2.1rem;
     margin-left: -9rem;
   }
 }
@@ -1644,27 +1654,78 @@ a::selection {
     cursor: pointer;
     margin-top: -2rem;
     margin-left: -35rem;
-    width: 10%;
+    width: 15%;
+    height: 20%;
+    opacity: 0.6;
   }
-
-  .ul-nav .li-nav {
-    margin: 3rem;
+  .nav-menu.opacity {
+    opacity: 1;
   }
-
-  .ul-nav.btnActive {
-    display: block;
-  }
-  .li-nav.btnActive {
+  /* .ul-nav .li-nav {
+  } */
+  .navActive {
     display: block;
   }
 
   .ul-nav {
-    margin-top: 2rem;
+    backdrop-filter: saturate(0%);
+    -webkit-backdrop-filter: saturate(0%);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    width: 70%;
+    padding-top: -2.5rem;
+    padding-right: 2rem;
+    margin-left: 12rem;
+    margin-top: 1.23rem;
     position: absolute;
-    margin-left: 15rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    z-index: 9999;
+    height: 70vh;
+    animation: navSlide 1s ease;
   }
 
+  /* keyframes animations */
+  @keyframes navSlide {
+    from {
+      transform: translateX(110%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .dropdown-menu {
+    opacity: 1;
+    transform: scale(1);
+    max-height: 400px;
+    /* backdrop-filter: saturate(0%);
+    -webkit-backdrop-filter: saturate(0%);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 12px; */
+    z-index: 1;
+    width: 100%;
+    margin-top: -2rem;
+  }
+  .option-projects {
+    margin-left: 0.9rem;
+    margin-top: 2.5rem;
+  }
+  .option-sosmed {
+    margin-left: 0.5rem;
+    width: 100%;
+  }
+  .dropdown-select {
+    width: 100%;
+  }
+  .options {
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  .homeDiv {
+    text-decoration: none;
+  }
   #darkMode {
     display: none;
   }
@@ -1688,6 +1749,9 @@ a::selection {
     margin-left: -39rem;
     margin-top: -2rem;
   }
+  .ul-nav {
+    padding-right: 4rem;
+  }
 }
 @media screen and (max-width: 362px) {
   .navbar {
@@ -1695,6 +1759,15 @@ a::selection {
     margin-left: 0.9rem;
     width: 21rem;
     height: 4.8rem;
+  }
+  .ul-nav {
+    margin-left: 10rem;
+  }
+  .option-projects {
+    margin-left: -0.4rem;
+  }
+  .option-sosmed {
+    margin-left: 0rem;
   }
   .nav-menu {
     margin-left: -40.5em;
@@ -2011,6 +2084,10 @@ a::selection {
     margin-left: -1rem;
   }
   /* supportBrandSection */
+  .supportBrand {
+    position: relative;
+    z-index: -1;
+  }
   .supportContent img {
     width: 3rem;
   }

@@ -57,6 +57,9 @@
                   <nav class="active-content">
                     <ul class="ul-nav" id="ulNav">
                       <li style="margin-top: -1.9rem" class="li-nav">
+                        <nav class="responsiveNavImagesLogo">
+                          <img src="" class="navResponsiveImagesLogo" />
+                        </nav>
                         <a
                           href="#Home"
                           class="active-link"
@@ -201,9 +204,7 @@
               </div>
             </div>
             <div class="ctaBtn">
-              <a href="#" class="active-link">
-                <button class="heroBtn" type="submit">Learn more</button>
-              </a>
+              <button class="heroBtn" type="submit">Learn more</button>
             </div>
             <center>
               <div class="imagesProfile">
@@ -253,6 +254,7 @@
                 src="assest/icons/icons8-github.svg"
                 alt="git"
                 class="githubPage"
+                onclick="gitCredit()"
               />
             </a>
             <a
@@ -260,7 +262,9 @@
               class="active-link-git"
               style="text-decoration: none"
             >
-              <p class="githubText" style="color: white">Github</p>
+              <p class="githubText" style="color: white" onclick="gitCredit()">
+                Github
+              </p>
             </a>
 
             <a
@@ -272,6 +276,7 @@
                 src="assest/icons/InstagramSocial.svg"
                 alt="ins"
                 class="insPage"
+                onclick="insCredit()"
               />
             </a>
             <a
@@ -279,7 +284,9 @@
               class="active-link-ins"
               style="text-decoration: none"
             >
-              <p class="insText" style="color: white">Instagram</p>
+              <p class="insText" style="color: white" onclick="insCredit()">
+                Instagram
+              </p>
             </a>
           </div>
         </div>
@@ -883,6 +890,7 @@
     <script src="./script/navbarScript/menuToggle.js"></script>
     <script src="./script/navbarScript/lightMode.js"></script>
     <script src="./script/navbarScript/responsive.js"></script>
+    <script src="./script/creditScript/script.js"></script>
     <script src="./script/projectsScript/openInNewTab.js"></script>
     <script src="./script/socialMediaScript/openLinkInNewTab.js"></script>
     <script src="./script/contactScript/index.js"></script>
